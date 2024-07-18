@@ -1,6 +1,11 @@
 title = "Deque"
 gitSourceBranch = "main"
 
+apiCategories = [
+	"Constructors",
+	"Methods"
+]
+
 [home]
 enabled = false
 includeReadme = true
