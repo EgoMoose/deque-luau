@@ -1,0 +1,10 @@
+title = "Deque"
+gitSourceBranch = "main"
+
+[home]
+enabled = false
+includeReadme = true
+
+[docusaurus.themeConfig.colorMode]
+respectPrefersColorScheme = true
+defaultMode = "dark"
