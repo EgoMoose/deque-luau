@@ -72,7 +72,7 @@ end
 ]=]
 function DequeClass.getElements<T>(self: Deque<T>): { T }
 	local elementsCopy = table.create(self.length, nil)
-	table.move(self.elements, self.index, self.index + self.length, 1, elementsCopy)
+	table.move(self.elements, self.index, self.index + self.length - 1, 1, elementsCopy)
 	return elementsCopy
 end
 
