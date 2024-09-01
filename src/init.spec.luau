@@ -81,6 +81,39 @@ return function()
 				expect(elements[i]).to.equal(ALPHABET[i + 2])
 			end
 		end)
+
+		it("should match when a nil value is at the front of the deque", function()
+			local d = DequeClass.new(ALPHABET :: { string? })
+			d:pushFront(nil)
+
+			local elements = d:getElements()
+			expect(#elements).to.equal(#ALPHABET + 1)
+
+			for i = 2, #elements do
+				expect(elements[i]).to.equal(ALPHABET[i - 1])
+			end
+
+			expect(elements[1]).to.equal(nil)
+		end)
+
+		it("should match when a nil value is in the middle of the deque", function()
+			local d = DequeClass.new(ALPHABET :: { string? })
+			local middle = math.floor(#ALPHABET / 2)
+			d:insert(middle, nil)
+
+			local elements = d:getElements()
+			expect(#elements).to.equal(#ALPHABET + 1)
+
+			for i = 1, #elements do
+				if i < middle then
+					expect(elements[i]).to.equal(ALPHABET[i])
+				elseif i == middle then
+					expect(elements[i]).to.equal(nil)
+				else
+					expect(elements[i]).to.equal(ALPHABET[i - 1])
+				end
+			end
+		end)
 	end)
 
 	describe(":getLength()", function()
