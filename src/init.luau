@@ -57,6 +57,15 @@ end
 
 -- Public Methods
 
+--[=[
+	@within Deque
+	@tag Methods
+
+	Returns the element at the provided index. This method will error if the provided index is out of range.
+	
+	@param index number
+	@return T
+]=]
 function DequeClass.getElement<T>(self: Deque<T>, index: number)
 	assert(index > 0 and index <= self.length, "Index out of range.")
 	return self.elements[self.index + index - 1]
