@@ -614,4 +614,22 @@ return function()
 			expect(d:getLength()).to.equal(0)
 		end)
 	end)
+
+	describe(":iterate()", function()
+		it("travel through the deque forward", function()
+			local d = DequeClass.new(ALPHABET)
+
+			for i, letter in d:iterate() do
+				expect(letter).to.equal(ALPHABET[i])
+			end
+		end)
+
+		it("travel through the deque backwards", function()
+			local d = DequeClass.new(ALPHABET)
+
+			for i, letter in d:iterate(true) do
+				expect(letter).to.equal(ALPHABET[i])
+			end
+		end)
+	end)
 end

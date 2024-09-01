@@ -381,6 +381,29 @@ function DequeClass.clear<T>(self: Deque<T>)
 	self.elements = {}
 end
 
+--[=[
+	@within Deque
+	@tag Methods
+
+	Provides an iterator that will travel through all elements of the deque.
+
+	@params reversed boolean? -- if the iterator should travel backwards
+	@return () -> (number, T)
+]=]
+function DequeClass.iterate<T>(self: Deque<T>, reversed: boolean?)
+	local i = 0
+	local sign = if reversed then -1 else 1
+	local start = if reversed then self.length + 1 else 0
+	return function()
+		i = i + 1
+		if i <= self.length then
+			local j = start + (sign * i)
+			return j, self.elements[self.index + j - 1]
+		end
+		return nil :: any, nil :: any
+	end
+end
+
 --
 
 return DequeClass
