@@ -387,7 +387,7 @@ end
 
 	Provides an iterator that will travel through all elements of the deque.
 
-	@params reversed boolean? -- if the iterator should travel backwards
+	@param reversed boolean? -- if the iterator should travel backwards
 	@return () -> (number, T)
 ]=]
 function DequeClass.iterate<T>(self: Deque<T>, reversed: boolean?)
