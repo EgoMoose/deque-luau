@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v2.3.1">
 <title data-rh="true">Deque | Deque</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://EgoMoose.github.io/deque-luau/api/Deque"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Deque | Deque"><meta data-rh="true" name="description" content="Deques are a generalization of stacks and queues (the name is pronounced &quot;deck&quot; and is short for &quot;double-ended queue&quot;)."><meta data-rh="true" property="og:description" content="Deques are a generalization of stacks and queues (the name is pronounced &quot;deck&quot; and is short for &quot;double-ended queue&quot;)."><link data-rh="true" rel="canonical" href="https://EgoMoose.github.io/deque-luau/api/Deque"><link data-rh="true" rel="alternate" href="https://EgoMoose.github.io/deque-luau/api/Deque" hreflang="en"><link data-rh="true" rel="alternate" href="https://EgoMoose.github.io/deque-luau/api/Deque" hreflang="x-default"><link rel="stylesheet" href="/deque-luau/assets/css/styles.19a5646f.css">
-<link rel="preload" href="/deque-luau/assets/js/runtime~main.2355e2b4.js" as="script">
-<link rel="preload" href="/deque-luau/assets/js/main.01f7014b.js" as="script">
+<link rel="preload" href="/deque-luau/assets/js/runtime~main.b82cd061.js" as="script">
+<link rel="preload" href="/deque-luau/assets/js/main.df9559ec.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -23,46 +23,48 @@
   This constructor is more efficient if you don't care that the table provided will be mutated as it will not be cloned.
   If you are unsure what constructor to use then it's safer to use <code>.new</code> instead.
 </p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="getElements"><code style="text-decoration:none">getElements</code><a href="#getElements" class="hash-link" aria-label="Direct link to getElements" title="Direct link to getElements">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L73"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">getElements</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="purple_ieR2">{</code><code class="blue_P4bS">T</code><code class="purple_ieR2">}</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="getElement"><code style="text-decoration:none">getElement</code><a href="#getElement" class="hash-link" aria-label="Direct link to getElement" title="Direct link to getElement">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L69"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">getElement</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>index<!-- -->: </code><code class="blue_P4bS">number</code></div></div><code>) → </code><code class="blue_P4bS">T</code></div><div>
+<p>Returns the element at the provided index. This method will error if the provided index is out of range.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="getElements"><code style="text-decoration:none">getElements</code><a href="#getElements" class="hash-link" aria-label="Direct link to getElements" title="Direct link to getElements">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L82"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">getElements</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="purple_ieR2">{</code><code class="blue_P4bS">T</code><code class="purple_ieR2">}</code></div><div>
 <p>Returns all the elements in the deque as an array.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="getLength"><code style="text-decoration:none">getLength</code><a href="#getLength" class="hash-link" aria-label="Direct link to getLength" title="Direct link to getLength">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L87"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">getLength</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS">number</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="getLength"><code style="text-decoration:none">getLength</code><a href="#getLength" class="hash-link" aria-label="Direct link to getLength" title="Direct link to getLength">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L96"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">getLength</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS">number</code></div><div>
 <p>Returns the number of elements in the deque.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="find"><code style="text-decoration:none">find</code><a href="#find" class="hash-link" aria-label="Direct link to find" title="Direct link to find">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L100"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">find</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code class="blue_P4bS">number?</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="find"><code style="text-decoration:none">find</code><a href="#find" class="hash-link" aria-label="Direct link to find" title="Direct link to find">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L109"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">find</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code class="blue_P4bS">number?</code></div><div>
 <p>Searches for the element in the deque and if found returns its index.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="drain"><code style="text-decoration:none">drain</code><a href="#drain" class="hash-link" aria-label="Direct link to drain" title="Direct link to drain">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L122"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">drain</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>from<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="drain"><code style="text-decoration:none">drain</code><a href="#drain" class="hash-link" aria-label="Direct link to drain" title="Direct link to drain">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L131"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">drain</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>from<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>the starting index of the removal</p>
 </span></span></div><div><code>length<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
 <p>how many elements to remove</p>
 </span></span></div></div><code>) → </code><code class="purple_ieR2">{</code><code class="blue_P4bS">T</code><code class="purple_ieR2">}</code></div><div>
 <p>Removes multiple elements from the deque and returns them.</p>
 <p>The provided combination of <code>from</code> and <code>length</code> cannot fall out of the following bounds <code>[1, deque:getLength()]</code> or an error will occur.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="insert"><code style="text-decoration:none">insert</code><a href="#insert" class="hash-link" aria-label="Direct link to insert" title="Direct link to insert">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L171"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">insert</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>index<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="insert"><code style="text-decoration:none">insert</code><a href="#insert" class="hash-link" aria-label="Direct link to insert" title="Direct link to insert">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L180"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">insert</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>index<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Inserts a new element in the provided index of the deque shifting as few existing elements as possible.</p>
 <p>The provided index cannot fall out of the following bounds <code>[1, deque:getLength() + 1]</code> or an error will occur.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="remove"><code style="text-decoration:none">remove</code><a href="#remove" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L206"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">remove</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>index<!-- -->: </code><code class="blue_P4bS">number</code></div></div><code>) → </code><code class="blue_P4bS">T</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="remove"><code style="text-decoration:none">remove</code><a href="#remove" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L215"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">remove</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>index<!-- -->: </code><code class="blue_P4bS">number</code></div></div><code>) → </code><code class="blue_P4bS">T</code></div><div>
 <p>Removes the element at the provided index of the deque while shifting as few existing elements as possible.</p>
 <p>The provided index cannot fall out of the following bounds <code>[1, queue:getLength()]</code> or an error will occur.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="popBack"><code style="text-decoration:none">popBack</code><a href="#popBack" class="hash-link" aria-label="Direct link to popBack" title="Direct link to popBack">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L221"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">popBack</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS">T</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="popBack"><code style="text-decoration:none">popBack</code><a href="#popBack" class="hash-link" aria-label="Direct link to popBack" title="Direct link to popBack">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L230"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">popBack</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS">T</code></div><div>
 <p>Removes the element at the end of the deque and returns it.</p>
 <p>If the deque is empty this method will error.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="pushBack"><code style="text-decoration:none">pushBack</code><a href="#pushBack" class="hash-link" aria-label="Direct link to pushBack" title="Direct link to pushBack">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L234"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">pushBack</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="pushBack"><code style="text-decoration:none">pushBack</code><a href="#pushBack" class="hash-link" aria-label="Direct link to pushBack" title="Direct link to pushBack">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L243"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">pushBack</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Appends the element at the end of the deque.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="popFront"><code style="text-decoration:none">popFront</code><a href="#popFront" class="hash-link" aria-label="Direct link to popFront" title="Direct link to popFront">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L248"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">popFront</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS">T</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="popFront"><code style="text-decoration:none">popFront</code><a href="#popFront" class="hash-link" aria-label="Direct link to popFront" title="Direct link to popFront">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L257"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">popFront</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS">T</code></div><div>
 <p>Removes the element at the front of the deque and returns it.</p>
 <p>If the deque is empty this method will error.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="pushFront"><code style="text-decoration:none">pushFront</code><a href="#pushFront" class="hash-link" aria-label="Direct link to pushFront" title="Direct link to pushFront">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L261"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">pushFront</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="pushFront"><code style="text-decoration:none">pushFront</code><a href="#pushFront" class="hash-link" aria-label="Direct link to pushFront" title="Direct link to pushFront">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L270"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">pushFront</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Prepends the element at the front of the deque.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="replace"><code style="text-decoration:none">replace</code><a href="#replace" class="hash-link" aria-label="Direct link to replace" title="Direct link to replace">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L276"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">replace</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>index<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="replace"><code style="text-decoration:none">replace</code><a href="#replace" class="hash-link" aria-label="Direct link to replace" title="Direct link to replace">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L285"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">replace</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>index<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code></div><div><code>element<!-- -->: </code><code class="blue_P4bS">T</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Replaces the element at the index in the deque.</p>
 <p>The provided index cannot fall out of the following bounds <code>[1, deque:getLength()]</code> or an error will occur.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="swap"><code style="text-decoration:none">swap</code><a href="#swap" class="hash-link" aria-label="Direct link to swap" title="Direct link to swap">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L292"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">swap</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>i<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="swap"><code style="text-decoration:none">swap</code><a href="#swap" class="hash-link" aria-label="Direct link to swap" title="Direct link to swap">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L301"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">swap</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>i<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>the index of element A</p>
 </span></span></div><div><code>j<!-- -->: </code><code class="blue_P4bS">number</code><span class="inlineDescription_G7Er">-- <span>
 <p>the index of element B</p>
 </span></span></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Swaps two elements already in the deque with each other.</p>
 <p>The provided indices cannot fall out of the following bounds <code>[1, deque:getLength()]</code> or an error will occur.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="rotate"><code style="text-decoration:none">rotate</code><a href="#rotate" class="hash-link" aria-label="Direct link to rotate" title="Direct link to rotate">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L318"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">rotate</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>n<!-- -->: </code><code class="blue_P4bS">number</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="rotate"><code style="text-decoration:none">rotate</code><a href="#rotate" class="hash-link" aria-label="Direct link to rotate" title="Direct link to rotate">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L327"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">rotate</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>n<!-- -->: </code><code class="blue_P4bS">number</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Rotate the deque n steps to the right. If n is negative, rotate to the left.</p>
 <p>Rotating one step to the right is equivalent to:</p>
 <pre class="language-lua"><code class="language-lua">deque<span class="token punctuation">:</span><span class="token function">pushFront</span><span class="token punctuation">(</span>deque<span class="token punctuation">:</span><span class="token function">popBack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -70,12 +72,16 @@
 <p>Rotating one step to the left is equivalent to:</p>
 <pre class="language-lua"><code class="language-lua">deque<span class="token punctuation">:</span><span class="token function">pushBack</span><span class="token punctuation">(</span>deque<span class="token punctuation">:</span><span class="token function">popFront</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="reverse"><code style="text-decoration:none">reverse</code><a href="#reverse" class="hash-link" aria-label="Direct link to reverse" title="Direct link to reverse">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L336"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">reverse</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="reverse"><code style="text-decoration:none">reverse</code><a href="#reverse" class="hash-link" aria-label="Direct link to reverse" title="Direct link to reverse">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L345"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">reverse</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Reverses the elements of the deque in-place.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="clone"><code style="text-decoration:none">clone</code><a href="#clone" class="hash-link" aria-label="Direct link to clone" title="Direct link to clone">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L356"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">clone</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="clone"><code style="text-decoration:none">clone</code><a href="#clone" class="hash-link" aria-label="Direct link to clone" title="Direct link to clone">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L365"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">clone</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code></div><div>
 <p>Creates a shallow copy of the deque.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="clear"><code style="text-decoration:none">clear</code><a href="#clear" class="hash-link" aria-label="Direct link to clear" title="Direct link to clear">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L369"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">clear</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="clear"><code style="text-decoration:none">clear</code><a href="#clear" class="hash-link" aria-label="Direct link to clear" title="Direct link to clear">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L378"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">clear</code><code>(</code><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code></div><div>
 <p>Remove all elements from the deque leaving it with length 0.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="iterate"><code style="text-decoration:none">iterate</code><a href="#iterate" class="hash-link" aria-label="Direct link to iterate" title="Direct link to iterate">​</a></h3><span class="docTag__6UZ" style="border-color:#00a1e4;color:#00a1e4">Methods</span><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/EgoMoose/deque-luau/blob/main/src/init.luau#L393"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Deque<!-- -->.</code><code class="green_DgR4">iterate</code><code>(</code><div class="inset_uKQm"><div><code>self<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/deque-luau/api/Deque">Deque</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">T</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>reversed<!-- -->: </code><code class="blue_P4bS">boolean?</code><span class="inlineDescription_G7Er">-- <span>
+<p>if the iterator should travel backwards</p>
+</span></span></div></div><code>) → </code><code class="purple_ieR2">(</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="purple_ieR2">(</code><div class="inset_uKQm"><code class="blue_P4bS">number</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code class="blue_P4bS">T</code></div><code class="purple_ieR2">)</code></div><div>
+<p>Provides an iterator that will travel through all elements of the deque.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
@@ -129,6 +135,36 @@
             }
         },
         {
+            &quot;name&quot;: &quot;getElement&quot;,
+            &quot;desc&quot;: &quot;Returns the element at the provided index. This method will error if the provided index is out of range.&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;self&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Deque&lt;T&gt;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;index&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;T&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;tags&quot;: [
+                &quot;Methods&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 69,
+                &quot;path&quot;: &quot;src/init.luau&quot;
+            }
+        },
+        {
             &quot;name&quot;: &quot;getElements&quot;,
             &quot;desc&quot;: &quot;Returns all the elements in the deque as an array.&quot;,
             &quot;params&quot;: [
@@ -149,7 +185,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 73,
+                &quot;line&quot;: 82,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -174,7 +210,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 87,
+                &quot;line&quot;: 96,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -204,7 +240,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 100,
+                &quot;line&quot;: 109,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -239,7 +275,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 122,
+                &quot;line&quot;: 131,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -269,7 +305,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 171,
+                &quot;line&quot;: 180,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -299,7 +335,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 206,
+                &quot;line&quot;: 215,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -324,7 +360,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 221,
+                &quot;line&quot;: 230,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -349,7 +385,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 234,
+                &quot;line&quot;: 243,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -374,7 +410,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 248,
+                &quot;line&quot;: 257,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -399,7 +435,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 261,
+                &quot;line&quot;: 270,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -429,7 +465,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 276,
+                &quot;line&quot;: 285,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -459,7 +495,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 292,
+                &quot;line&quot;: 301,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -484,7 +520,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 318,
+                &quot;line&quot;: 327,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -504,7 +540,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 336,
+                &quot;line&quot;: 345,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -529,7 +565,7 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 356,
+                &quot;line&quot;: 365,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -554,7 +590,37 @@
                 &quot;Methods&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 369,
+                &quot;line&quot;: 378,
+                &quot;path&quot;: &quot;src/init.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;iterate&quot;,
+            &quot;desc&quot;: &quot;Provides an iterator that will travel through all elements of the deque.&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;self&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Deque&lt;T&gt;&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;reversed&quot;,
+                    &quot;desc&quot;: &quot;if the iterator should travel backwards&quot;,
+                    &quot;lua_type&quot;: &quot;boolean?&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;() -&gt; (number, T)&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;tags&quot;: [
+                &quot;Methods&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 393,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         }
@@ -567,8 +633,8 @@
         &quot;line&quot;: 8,
         &quot;path&quot;: &quot;src/init.luau&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Constructors" class="table-of-contents__link toc-highlight">Constructors</a><ul><li><a href="#new" class="table-of-contents__link toc-highlight">.new</a></li><li><a href="#raw" class="table-of-contents__link toc-highlight">.raw</a></li></ul></li><li><a href="#Methods" class="table-of-contents__link toc-highlight">Methods</a><ul><li><a href="#clear" class="table-of-contents__link toc-highlight">.clear</a></li><li><a href="#clone" class="table-of-contents__link toc-highlight">.clone</a></li><li><a href="#drain" class="table-of-contents__link toc-highlight">.drain</a></li><li><a href="#find" class="table-of-contents__link toc-highlight">.find</a></li><li><a href="#getElements" class="table-of-contents__link toc-highlight">.getElements</a></li><li><a href="#getLength" class="table-of-contents__link toc-highlight">.getLength</a></li><li><a href="#insert" class="table-of-contents__link toc-highlight">.insert</a></li><li><a href="#popBack" class="table-of-contents__link toc-highlight">.popBack</a></li><li><a href="#popFront" class="table-of-contents__link toc-highlight">.popFront</a></li><li><a href="#pushBack" class="table-of-contents__link toc-highlight">.pushBack</a></li><li><a href="#pushFront" class="table-of-contents__link toc-highlight">.pushFront</a></li><li><a href="#remove" class="table-of-contents__link toc-highlight">.remove</a></li><li><a href="#replace" class="table-of-contents__link toc-highlight">.replace</a></li><li><a href="#reverse" class="table-of-contents__link toc-highlight">.reverse</a></li><li><a href="#rotate" class="table-of-contents__link toc-highlight">.rotate</a></li><li><a href="#swap" class="table-of-contents__link toc-highlight">.swap</a></li></ul></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 EgoMoose. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/deque-luau/assets/js/runtime~main.2355e2b4.js"></script>
-<script src="/deque-luau/assets/js/main.01f7014b.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Constructors" class="table-of-contents__link toc-highlight">Constructors</a><ul><li><a href="#new" class="table-of-contents__link toc-highlight">.new</a></li><li><a href="#raw" class="table-of-contents__link toc-highlight">.raw</a></li></ul></li><li><a href="#Methods" class="table-of-contents__link toc-highlight">Methods</a><ul><li><a href="#clear" class="table-of-contents__link toc-highlight">.clear</a></li><li><a href="#clone" class="table-of-contents__link toc-highlight">.clone</a></li><li><a href="#drain" class="table-of-contents__link toc-highlight">.drain</a></li><li><a href="#find" class="table-of-contents__link toc-highlight">.find</a></li><li><a href="#getElement" class="table-of-contents__link toc-highlight">.getElement</a></li><li><a href="#getElements" class="table-of-contents__link toc-highlight">.getElements</a></li><li><a href="#getLength" class="table-of-contents__link toc-highlight">.getLength</a></li><li><a href="#insert" class="table-of-contents__link toc-highlight">.insert</a></li><li><a href="#iterate" class="table-of-contents__link toc-highlight">.iterate</a></li><li><a href="#popBack" class="table-of-contents__link toc-highlight">.popBack</a></li><li><a href="#popFront" class="table-of-contents__link toc-highlight">.popFront</a></li><li><a href="#pushBack" class="table-of-contents__link toc-highlight">.pushBack</a></li><li><a href="#pushFront" class="table-of-contents__link toc-highlight">.pushFront</a></li><li><a href="#remove" class="table-of-contents__link toc-highlight">.remove</a></li><li><a href="#replace" class="table-of-contents__link toc-highlight">.replace</a></li><li><a href="#reverse" class="table-of-contents__link toc-highlight">.reverse</a></li><li><a href="#rotate" class="table-of-contents__link toc-highlight">.rotate</a></li><li><a href="#swap" class="table-of-contents__link toc-highlight">.swap</a></li></ul></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 EgoMoose. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/deque-luau/assets/js/runtime~main.b82cd061.js"></script>
+<script src="/deque-luau/assets/js/main.df9559ec.js"></script>
 </body>
 </html>
