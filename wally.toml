@@ -1,7 +1,7 @@
 [package]
 name = "egomoose/deque"
 description = "https://github.com/EgoMoose/deque-luau"
-version = "0.1.1"
+version = "0.2.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 license = "MIT"
